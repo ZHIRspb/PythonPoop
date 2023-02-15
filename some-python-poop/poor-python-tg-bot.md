@@ -16,7 +16,7 @@ audio = ''
 vid = ''
 aud = ''
 
-bot = telebot.TeleBot("6269317752:AAFglq6QXXlCmIseD3RIAB_ObdwDhXTom6A")
+bot = telebot.TeleBot("UR_TOKEN")
 @bot.message_handler(commands=['start', 'help'])
 
 def send_welcome(message):
@@ -47,11 +47,11 @@ def send_files(message):
         audio.write_audiofile('audio.mp3')
 
         global vid
-        vid = open('C:/Users/tniki/PycharmProjects/video_to_audio/video.mp4', 'rb')
+        vid = open('file_path', 'rb')
         bot.send_video(message.chat.id, vid)
 
         global aud
-        aud = open('C:/Users/tniki/PycharmProjects/video_to_audio/audio.mp3', 'rb')
+        aud = open('file_path', 'rb')
         bot.send_audio(message.chat.id, aud)
 
     else:
