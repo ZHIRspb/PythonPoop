@@ -2,7 +2,7 @@
 description: Youtube video downloader + audiofile loader
 ---
 
-# Poor Python TG Bot
+# 🤖 Poor Python TG Bot
 
 ```
 import moviepy.editor
@@ -53,7 +53,7 @@ def send_files(message):
         global aud
         aud = open('C:/Users/tniki/PycharmProjects/video_to_audio/audio.mp3', 'rb')
         bot.send_audio(message.chat.id, aud)
-        
+
     else:
         bot.send_message(message.from_user.id, "Проверь правильность ссылки (ссылка должна быть формата https://www.yotube.com/video_link или https://youtu.be/video_link)")
 
