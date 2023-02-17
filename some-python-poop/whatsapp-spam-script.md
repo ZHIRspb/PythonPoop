@@ -2,7 +2,7 @@
 description: Need to login before u start script
 ---
 
-# ✉ WhatsApp spammer
+# ✉ WhatsApp spam script
 
 ```
 import pywhatkit

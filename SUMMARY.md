@@ -4,4 +4,4 @@
   * [🤖 Poor Python TG Bot](some-python-poop/poor-python-tg-bot.md)
   * [🗃 File encrypt/decrypt](some-python-poop/file-encrypt-decrypt.md)
   * [📺 Youtube video downloader](some-python-poop/youtube-video-downloader.md)
-  * [✉ WhatsApp spammer](some-python-poop/whatsapp-spammer.md)
+  * [✉ WhatsApp spam script](some-python-poop/whatsapp-spam-script.md)
