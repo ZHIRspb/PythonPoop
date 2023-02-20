@@ -24,6 +24,7 @@ for i in yt.streams.filter(only_video=True).all():
 video_tag = int(input('Choose video download tag: '))
 
 fps = int(input('Enter video fps parameter: '))
+bitrate = input('Enter bitrate parameter: ')
 
 audio = yt.streams.get_by_itag(audio_tag)
 audio.download(filename='audio.mp3')
@@ -34,7 +35,7 @@ video.download(filename='vidos.mp4')
 video_clip = moviepy.editor.VideoFileClip('vidos.mp4')
 
 final_video = video_clip.set_audio(audio_clip)
-final_video.write_videofile('final_video.mp4', fps=fps, codec='h264_nvenc')
+final_video.write_videofile('final_video.mp4', fps=fps, codec='h264_nvenc', bitrate=bitrate)
 os.remove('vidos.mp4')
 
 ```
