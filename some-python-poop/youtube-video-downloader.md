@@ -35,7 +35,7 @@ video.download(filename='vidos.mp4')
 video_clip = moviepy.editor.VideoFileClip('vidos.mp4')
 
 final_video = video_clip.set_audio(audio_clip)
-final_video.write_videofile('final_video.mp4', fps=fps, codec='h264_nvenc', bitrate=bitrate)
+final_video.write_videofile('final_video.mp4', fps=fps, codec='h264_nvenc', bitrate)
 os.remove('vidos.mp4')
 
 ```
