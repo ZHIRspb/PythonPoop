@@ -4,7 +4,7 @@ description: Youtube video downloader + audiofile loader
 
 # 🤖 Poor Python TG Bot
 
-```
+```python
 import moviepy.editor
 from pytube import YouTube
 import telebot

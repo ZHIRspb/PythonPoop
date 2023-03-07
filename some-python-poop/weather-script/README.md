@@ -1,6 +1,6 @@
 # ☁ Weather script
 
-```
+```python
 from config import weather_token
 import requests
 import datetime
@@ -23,20 +23,22 @@ def weather_no_country(city, API_token):
 
         weather_type = data['weather'][0]['description']
 
-        dolgota = data['coord']['lon']
+        longitude = data['coord']['lon']
 
-        shirota = data['coord']['lat']
+        latitude = data['coord']['lat']
 
         country = data['sys']['country']
+
         # print(data)
+
         print(
             f'\033[38;5;141m*****{cur_datetime}*****\033[0;0m\n'
-            f'Weather in \033[38;5;40m{city}\033[0;0m, \033[38;5;40m{country}\033[0;0m:\n'
+            f'Weather in {city}, {country}:\n'
             f'Current temperature is {colored_tmp(cur_temp)}°C\n'
             f'Feels like {colored_tmp(feel_like)}°C\n'
             f'Wind speed is {colored_wind(wind_speed)} m/s\n'
             f'There is \033[38;5;156m{weather_type}\033[0;0m outside\n'
-            f'City coordinats is \033[4m{shirota}\033[0m \033[4m{dolgota}\033[0m')
+            f'City coordinats is \033[4m{latitude}\033[0m \033[4m{longitude}\033[0m')
 
     except Exception as ex:
         print(ex)
@@ -96,3 +98,4 @@ if __name__ == '__main__':    #everlasting script
 
 # if __name__ == '__main__':
 #     main()
+```

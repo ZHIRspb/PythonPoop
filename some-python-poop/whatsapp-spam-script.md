@@ -4,7 +4,7 @@ description: Need to login before u start script
 
 # ✉ WhatsApp spam script
 
-```
+```python
 import pywhatkit
 import pyautogui as pt
 

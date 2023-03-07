@@ -4,7 +4,7 @@ description: Files encryption/decryption by pyAesCrypt w/ password
 
 # 🗃 File encrypt/decrypt
 
-```
+```python
 import pyAesCrypt
 
 passwd = input ('File encrypt password: ')

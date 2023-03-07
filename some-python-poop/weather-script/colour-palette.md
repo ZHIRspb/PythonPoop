@@ -1,6 +1,6 @@
 # 🎨 Colour palette
 
-```
+```python
 def colors_16(color_):
     return("\033[2;{num}m {num} \033[0;0m".format(num=str(color_)))
 

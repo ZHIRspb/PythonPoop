@@ -6,7 +6,7 @@ description: >-
 
 # 📺 Youtube video downloader
 
-```
+```python
 import moviepy.editor
 from pytube import YouTube
 import os
