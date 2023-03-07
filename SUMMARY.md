@@ -8,3 +8,5 @@
   * [☁ Weather script](some-python-poop/weather-script/README.md)
     * [🌫 Coloured data function](some-python-poop/weather-script/coloured-data-function.md)
     * [🎨 Colour palette](some-python-poop/weather-script/colour-palette.md)
+  * [🔧 Simple Port Scanner](readme/simple-port-scanner/README.md)
+    * [Getting IP address by hostname function](readme/simple-port-scanner/getting-ip-address-by-hostname-function.md)
