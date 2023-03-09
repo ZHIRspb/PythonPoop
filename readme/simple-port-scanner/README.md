@@ -15,6 +15,15 @@ print(pyfiglet.figlet_format("Port scanner"))
 target = input("Target IP address or target Hostname: ")
 target = get_ip_by_hostname(target)
 
+print(f'\033[38;5;64mSet range of scanning ports\033[0m')
+
+start_port = int(input('Enter start scan port: '))
+
+stop_port = int(input('Enter the final scan port: '))
+
+
+# postavit' range portov
+
 try:
     IP(target)  # checking if input IP format is correct
 
@@ -25,7 +34,7 @@ try:
     try:
 
         # will scan ports between 1 and 65,535
-        for port in range(1, 65535):
+        for port in range(start_port, stop_port + 1):
             s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             socket.setdefaulttimeout(1)
 
@@ -48,4 +57,5 @@ try:
 
 except Exception as ex:
     print(f'\033[38;5;196m{ex} (please check your IP address or hostname is correct)\033[0m')
+
 ```
