@@ -1,4 +1,4 @@
-# 🎨 Colour palette
+# Colour palette
 
 ```python
 def colors_16(color_):

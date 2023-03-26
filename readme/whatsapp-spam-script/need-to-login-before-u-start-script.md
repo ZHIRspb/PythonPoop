@@ -1,8 +1,4 @@
----
-description: Need to login before u start script
----
-
-# ✉ WhatsApp spam script
+# Need to login before u start script
 
 ```python
 import pywhatkit

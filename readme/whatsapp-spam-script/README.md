@@ -1,0 +1,2 @@
+# ✉ WhatsApp spam script
+

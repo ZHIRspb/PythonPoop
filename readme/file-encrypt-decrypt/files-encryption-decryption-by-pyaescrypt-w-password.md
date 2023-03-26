@@ -1,8 +1,4 @@
----
-description: Files encryption/decryption by pyAesCrypt w/ password
----
-
-# 🗃 File encrypt/decrypt
+# Files encryption/decryption by pyAesCrypt w/ password
 
 ```python
 import pyAesCrypt

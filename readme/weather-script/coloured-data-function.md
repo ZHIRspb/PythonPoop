@@ -1,4 +1,4 @@
-# 🌫 Coloured data function
+# Coloured data function
 
 ```python
 colour_tmp_list = {
